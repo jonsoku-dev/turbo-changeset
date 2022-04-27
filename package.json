@@ -13,13 +13,21 @@
     "changeset": "changeset",
     "version-packages": "changeset version",
     "release": "turbo run build --filter=docs^... && changeset publish",
-    "changeset:tag": "changeset tag"
+    "changeset:tag": "changeset tag",
+    "changelog:gen": "ts-node scripts/changelog-generate.ts"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.4.4",
     "@changesets/cli": "^2.22.0",
+    "@types/lodash": "^4.14.182",
+    "@types/node": "^17.0.29",
+    "@types/prettier": "^2.6.0",
     "eslint": "7.32.0",
-    "prettier": "^2.5.1",
+    "prettier": "^2.6.2",
+    "ts-node": "^10.7.0",
     "turbo": "latest"
   }
 }
